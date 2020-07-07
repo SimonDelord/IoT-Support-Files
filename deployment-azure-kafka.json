@@ -1,0 +1,75 @@
+{
+  "modulesContent": {
+    "$edgeAgent": {
+      "properties.desired": {
+        "schemaVersion": "1.0",
+        "runtime": {
+          "type": "docker",
+          "settings": {
+            "minDockerVersion": "v1.25",
+            "loggingOptions": "",
+            "registryCredentials": {
+              "SimonIoTModules": {
+                "username": "SimonIoTModules",
+                "password": "F=6k3pb2Af6oF3IVQ+6WF8kL0YUetTCj",
+                "address": "simoniotmodules.azurecr.io"
+              }
+            }
+          }
+        },
+        "systemModules": {
+          "edgeAgent": {
+            "type": "docker",
+            "settings": {
+              "image": "mcr.microsoft.com/azureiotedge-agent:1.0",
+              "createOptions": "{}"
+            }
+          },
+          "edgeHub": {
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "mcr.microsoft.com/azureiotedge-hub:1.0",
+              "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"5671/tcp\":[{\"HostPort\":\"5671\"}],\"8883/tcp\":[{\"HostPort\":\"8883\"}],\"443/tcp\":[{\"HostPort\":\"443\"}]}}}"
+            }
+          }
+        },
+        "modules": {
+          "Module-IoT-Hub-kafka": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "simoniotmodules.azurecr.io/module-iothub-kafka:0.0.10",
+              "createOptions": "{}"
+		}
+            },
+	   "Module-IoT-sensor-generator": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "simoniotmodules.azurecr.io/module-iot-sensor-generator:0.0.5",
+              "createOptions": "{}"
+            }
+          }
+        }
+      }
+    },
+    "$edgeHub": {
+      "properties.desired": {
+        "schemaVersion": "1.0",
+        "routes": {
+	"SampleModuleToModule": "FROM /messages/modules/Module-IoT-sensor-generator/outputs/output1 INTO BrokeredEndpoint(\"/modules/Module-IoT-Hub-kafka/inputs/input1\")",
+	  "SampleModuleToIoTHub": "FROM /messages/modules/Module-IoT-sensor-generator/outputs/* INTO $upstream"
+	},
+	"storeAndForwardConfiguration": {
+          "timeToLiveSecs": 7200
+        }   
+      }
+    }
+  }
+}
