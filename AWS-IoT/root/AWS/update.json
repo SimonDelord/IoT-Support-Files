@@ -1,0 +1,5 @@
+{
+    "GroupId": "d87120da-e5fa-4249-b50f-42643aea08b7",
+    "Name": "GrosPD",
+    "FunctionDefinitionVersionArn": "arn:aws:lambda:ap-southeast-2:140731854256:function:Greengrass_HelloWorld"
+}

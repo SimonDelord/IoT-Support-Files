@@ -1,0 +1,11 @@
+{
+    "AmznClientToken": "DINGroupNew",
+    "InitialVersion": {
+        "CoreDefinitionVersionArn": "arn:aws:greengrass:ap-southeast-2:140731854256:/greengrass/definition/cores/fc7c5de8-f54b-4d83-8ef8-8943ab14bcfa/versions/57903e5b-6140-4494-8f0c-42466e874072",
+        "LoggerDefinitionVersionArn": "arn:aws:greengrass:ap-southeast-2:140731854256:/greengrass/definition/loggers/815bd6bc-4c48-4129-bd69-bada52232120/versions/aa843045-8cd3-4e20-b588-815ffadb922e"
+    },
+    "Name": "",
+    "tags": {
+        "KeyName": ""
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "Arn": "arn:aws:greengrass:ap-southeast-2:140731854256:/greengrass/groups/3e11d4c7-f9c0-4ff1-aa52-56ff5a0069a3/versions/bbc5a952-4e00-4713-a06e-1e8c5715f4ce",
+    "CreationTimestamp": "2019-12-12T02:16:07.114Z",
+    "Definition": {
+        "CoreDefinitionVersionArn": "arn:aws:greengrass:ap-southeast-2:140731854256:/greengrass/definition/cores/91a09cb0-3157-4bc1-aeaf-86ea80345f13/versions/a8d85744-564c-46f2-ad5f-a51f1f93f561",
+        "FunctionDefinitionVersionArn": "arn:aws:greengrass:ap-southeast-2:140731854256:/greengrass/definition/functions/bb623cd2-505a-418e-81a9-dd79e12b4d64/versions/ce1f302d-67b7-4cce-9a5d-c747aa80b006",
+        "LoggerDefinitionVersionArn": "arn:aws:greengrass:ap-southeast-2:140731854256:/greengrass/definition/loggers/815bd6bc-4c48-4129-bd69-bada52232120/versions/aa843045-8cd3-4e20-b588-815ffadb922e",
+        "SubscriptionDefinitionVersionArn": "arn:aws:greengrass:ap-southeast-2:140731854256:/greengrass/definition/subscriptions/e0ef6b6b-81e8-4820-ae2a-e1539f7c0c08/versions/f6e2eee0-d1fe-4c81-a618-b62771135b15"
+    },
+    "Id": "3e11d4c7-f9c0-4ff1-aa52-56ff5a0069a3",
+    "Version": "bbc5a952-4e00-4713-a06e-1e8c5715f4ce"
+}

@@ -1,0 +1,12 @@
+{
+    "AmznClientToken": "sdn-core-definition",
+    "CoreDefinitionId": "fc7c5de8-f54b-4d83-8ef8-8943ab14bcfa",
+    "Cores": [
+        {
+            "CertificateArn": "arn:aws:iot:ap-southeast-2:140731854256:cert/1c75d0e72f47e12f60ef41caae34df884c3392db68f5d704cf54c0a7ef5ea776",
+            "Id": "SDN-GW-Core",
+            "SyncShadow": true,
+            "ThingArn": "arn:aws:iot:ap-southeast-2:140731854256:thing/SDN-GW-Core"
+        }
+    ]
+}

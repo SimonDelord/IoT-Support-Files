@@ -1,0 +1,16 @@
+{
+    "AmznClientToken": "jetemmerde",
+    "InitialVersion": {
+        "ConnectorDefinitionVersionArn": "",
+        "CoreDefinitionVersionArn": "",
+        "DeviceDefinitionVersionArn": "",
+        "FunctionDefinitionVersionArn": "arn:aws:greengrass:ap-southeast-2:140731854256:/greengrass/definition/functions/6bea6c65-e46b-4f00-968e-0e09c75427ae/versions/4ad90008-7363-4525-9225-6e1a1c425c21",
+        "LoggerDefinitionVersionArn": "",
+        "ResourceDefinitionVersionArn": "",
+        "SubscriptionDefinitionVersionArn": ""
+    },
+    "Name": "",
+    "tags": {
+        "KeyName": ""
+    }
+}

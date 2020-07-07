@@ -1,0 +1,51 @@
+{
+    "AmznClientToken": "",
+    "InitialVersion": {
+        "DefaultConfig": {
+            "Execution": {
+                "IsolationMode": "GreengrassContainer",
+                "RunAs": {
+                    "Gid": 0,
+                    "Uid": 0
+                }
+            }
+        },
+        "Functions": [
+            {
+                "FunctionArn": "arn:aws:lambda:ap-southeast-2:140731854256:function:Greengrass_HelloWorld",
+                "FunctionConfiguration": {
+                    "EncodingType": "binary",
+                    "Environment": {
+                        "AccessSysfs": true,
+                        "Execution": {
+                            "IsolationMode": "NoContainer",
+                            "RunAs": {
+                                "Gid": 0,
+                                "Uid": 0
+                            }
+                        },
+                        "ResourceAccessPolicies": [
+                            {
+                                "Permission": "ro",
+                                "ResourceId": ""
+                            }
+                        ],
+                        "Variables": {
+                            "KeyName": ""
+                        }
+                    },
+                    "ExecArgs": "",
+                    "Executable": "",
+                    "MemorySize": 0,
+                    "Pinned": true,
+                    "Timeout": 0
+                },
+                "Id": ""
+            }
+        ]
+    },
+    "Name": "",
+    "tags": {
+        "KeyName": ""
+    }
+}
